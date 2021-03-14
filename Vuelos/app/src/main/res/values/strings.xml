@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vuelos</string>
+    <string name="name">Reservas viajes</string>
+    <string name="soloIda">Solo Ida</string>
+    <string name="regreso">regreso</string>
+    <string name="hsalida">Hora salida</string>
+
+</resources>

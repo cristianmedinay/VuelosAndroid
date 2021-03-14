@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colormorado"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:titleTextColor="@android:color/white"
+        android:id="@+id/toolbar"
+
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        >
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/spinner"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/editex_fecha"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:hint="salida"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/editex_dia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:hint="Hora salida"
+            android:inputType="time">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        >
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/spinner_regreso"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/editex_fecha_regreso"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:hint="regreso"
+            android:inputType="date"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/editex_dia_regreso"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:hint="Hora salida"
+            android:inputType="datetime"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="right"
+        >
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="solo ida"
+            android:id="@+id/check_ida"
+            android:checked="false"
+            android:enabled="true"
+            >
+        </CheckBox>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Viaje"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:background="@color/colormorado"
+        android:id="@+id/btn_agregar"
+        >
+    </Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
